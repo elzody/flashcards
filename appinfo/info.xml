@@ -1,0 +1,29 @@
+<?xml version="1.0">
+
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+	<id>flashcards</id>
+	<name>Flashcards</name>
+	<summary>Study with flashcards on Nextcloud</summary>
+	<description>
+		Flashcards allows you to create flashcards from scratch or import them from files or other Nextcloud apps. You can customize your learning parameters to help fine tune your retention rate.
+	</description>
+	<version>0.1.0</version>
+	<licence>agpl</licence>
+	<author mail="lizzy7128@tutanota.de">Elizabeth Danzberger</author>
+	<namespace>Flashcards</namespace>
+	<category>tools</category>
+	<bugs>https://github.com/elzody/flashcards/issues</bugs>
+	<dependencies>
+		<nextcloud min-version="29" max-version="29" />
+	</dependencies>
+	<navigations>
+		<navigation>
+			<id>flashcards</id>
+			<name>Flashcards</name>
+			<route>flashcards.page.index</route>
+			<icon>app.svg</icon>
+			<type>link</type>
+		</navigation>
+	</navigations>
+</info>
