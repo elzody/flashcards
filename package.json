@@ -5,18 +5,16 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc -b && vite build",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@nextcloud/vue": "^8.15.0",
     "vue": "^3.4.31"
   },
   "devDependencies": {
     "@nextcloud/vite-config": "^2.1.0",
-    "@nextcloud/vue": "^8.15.0",
     "@vitejs/plugin-vue": "^5.0.5",
-    "typescript": "^5.2.2",
-    "vite": "^5.3.4",
-    "vue-tsc": "^2.0.24"
+    "vite": "^5.3.4"
   }
 }
