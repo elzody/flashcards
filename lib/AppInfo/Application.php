@@ -9,7 +9,7 @@ use OCP\AppFramework\App;
 class Application extends App {
 	public const APP_NAME = 'flashcards';
 
-	public function __construct(array $params = []) {
-		parent::__construct(self::APP_NAME, $params);
+	public function __construct() {
+		parent::__construct(self::APP_NAME);
 	}
 }
