@@ -1,5 +1,6 @@
 import { createAppConfig } from '@nextcloud/vite-config'
+import path from 'path'
 
 export default createAppConfig({
-  main: 'src/main.js',
+  main: path.resolve(__dirname, 'src', 'main.js'),
 })

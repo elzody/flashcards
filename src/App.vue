@@ -1,17 +1,21 @@
 <template>
-  <div id="content">
-    <p>{{ count }}</p>
-  </div>
+  <div>{{ count }}</div>
 </template>
 
-<script setup>
-import { ref } from 'vue'
+<script>
+import NcAppContent from '@nextcloud/vue/dist/Components/NcAppContent.js'
 
-const count = ref(0)
-</script>
+export default {
+  name: 'App',
 
-<style scoped>
-h1 {
-  font-family: Ubuntu, sans-serif;
+  components: {
+    NcAppContent,
+  },
+
+  data() {
+    return {
+      count: 0,
+    }
+  },
 }
-</style>
+</script>
