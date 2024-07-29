@@ -1,19 +1,18 @@
 {
   "name": "flashcards",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "vite --mode development build",
+    "build": "vite --mode production build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@nextcloud/vue": "^8.15.0",
+    "@nextcloud/vue": "9.0.0-alpha.5",
     "vue": "^3.4.31"
   },
   "devDependencies": {
-    "@nextcloud/vite-config": "^2.1.0",
     "@vitejs/plugin-vue": "^5.0.5",
     "vite": "^5.3.4"
   }
