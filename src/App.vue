@@ -1,15 +1,15 @@
 <template>
-  <div>{{ count }}</div>
+  <NcAppNavigation></NcAppNavigation>
 </template>
 
 <script>
-import NcAppContent from '@nextcloud/vue/dist/Components/NcAppContent.js'
+import { NcAppNavigation } from '@nextcloud/vue'
 
 export default {
   name: 'App',
 
   components: {
-    NcAppContent,
+    NcAppNavigation,
   },
 
   data() {
