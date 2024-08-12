@@ -13,7 +13,9 @@
 			"OCA\\Flashcards\\": "lib/"
 		}
 	},
-	"scripts": {},
+	"scripts": {
+		"fmt": "npx prettier --write ."
+	},
 	"require": {
 		"bamarni/composer-bin-plugin": "^1.8",
 		"php": "^8.1"
