@@ -1,20 +1,22 @@
 {
-  "name": "flashcards",
-  "private": true,
-  "version": "0.1.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite -m development build",
-    "build": "vite -m production build",
-    "watch": "vite -m development -w build"
-  },
-  "dependencies": {
-    "@nextcloud/vue": "9.0.0-alpha.5",
-    "vue": "^3.4.31"
-  },
-  "devDependencies": {
-    "@nextcloud/vite-config": "^2.1.0",
-    "@vitejs/plugin-vue": "^5.0.5",
-    "vite": "^5.3.4"
-  }
+	"name": "flashcards",
+	"private": true,
+	"version": "0.1.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite -m development build",
+		"build": "vite -m production build",
+		"watch": "vite -m development -w build",
+		"fmt": "prettier --write src/"
+	},
+	"dependencies": {
+		"@nextcloud/vue": "9.0.0-alpha.5",
+		"vue": "^3.4.31"
+	},
+	"devDependencies": {
+		"@nextcloud/vite-config": "^2.1.0",
+		"@vitejs/plugin-vue": "^5.0.5",
+		"prettier": "3.3.3",
+		"vite": "^5.3.4"
+	}
 }
