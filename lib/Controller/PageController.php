@@ -10,18 +10,21 @@ use OCP\AppFramework\Http\Attribute\NoAdminRequired;
 use OCP\AppFramework\Http\Attribute\NoCSRFRequired;
 use OCP\IRequest;
 
-class PageController extends Controller {
-	public function __construct(IRequest $request) {
+class PageController extends Controller
+{
+	public function __construct(IRequest $request)
+	{
 		parent::__construct(Application::APP_NAME, $request);
 	}
 
-    /**
-     * @return TemplateResponse<int,array<string,mixed>>
-     */
-    #[NoCSRFRequired]
-    #[NoAdminRequired]
-    #[FrontpageRoute(verb: 'GET', url: '/')]
-	public function index(): TemplateResponse {
+	/**
+	 * @return TemplateResponse<int,array<string,mixed>>
+	 */
+	#[NoCSRFRequired]
+	#[NoAdminRequired]
+	#[FrontpageRoute(verb: 'GET', url: '/')]
+	public function index(): TemplateResponse
+	{
 		return new TemplateResponse(Application::APP_NAME, 'main');
 	}
 }
