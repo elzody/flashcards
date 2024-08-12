@@ -8,7 +8,7 @@
 		"build": "vite -m production build",
 		"watch": "vite -m development -w build",
 		"fmt": "prettier --write .",
-		"lint": "npx eslint --fix src/"
+		"lint": "npx eslint --fix 'src/**/*.{js,vue}'"
 	},
 	"dependencies": {
 		"@nextcloud/vue": "9.0.0-alpha.5",
