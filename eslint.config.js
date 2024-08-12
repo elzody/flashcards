@@ -1,7 +1,4 @@
 import eslintConfigPrettier from 'eslint-config-prettier'
+import pluginVue from 'eslint-plugin-vue'
 
-const config = {
-	rules: {},
-}
-
-export default [config, eslintConfigPrettier]
+export default [...pluginVue.configs['flat/recommended'], eslintConfigPrettier]

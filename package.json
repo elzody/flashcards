@@ -7,7 +7,8 @@
 		"dev": "vite -m development build",
 		"build": "vite -m production build",
 		"watch": "vite -m development -w build",
-		"fmt": "prettier --write ."
+		"fmt": "prettier --write .",
+		"lint": "npx eslint --fix src/"
 	},
 	"dependencies": {
 		"@nextcloud/vue": "9.0.0-alpha.5",
@@ -20,6 +21,7 @@
 		"@vitejs/plugin-vue": "^5.0.5",
 		"eslint": "9.9.0",
 		"eslint-config-prettier": "9.1.0",
+		"eslint-plugin-vue": "9.27.0",
 		"prettier": "3.3.3",
 		"vite": "^5.3.4"
 	}
