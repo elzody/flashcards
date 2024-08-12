@@ -7,7 +7,7 @@
 		"dev": "vite -m development build",
 		"build": "vite -m production build",
 		"watch": "vite -m development -w build",
-		"fmt": "prettier --write src/"
+		"fmt": "prettier --write src/ lib/"
 	},
 	"dependencies": {
 		"@nextcloud/vue": "9.0.0-alpha.5",
@@ -15,6 +15,7 @@
 	},
 	"devDependencies": {
 		"@nextcloud/vite-config": "^2.1.0",
+		"@prettier/plugin-php": "0.22.2",
 		"@vitejs/plugin-vue": "^5.0.5",
 		"prettier": "3.3.3",
 		"vite": "^5.3.4"
