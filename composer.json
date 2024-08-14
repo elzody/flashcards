@@ -14,7 +14,8 @@
 		}
 	},
 	"scripts": {
-		"fmt": "npx prettier --write ."
+		"fmt": "npx prettier --write .",
+		"lint": "vendor/bin/phplint lib/"
 	},
 	"require": {
 		"php": "^8.1"
