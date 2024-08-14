@@ -2,3 +2,5 @@ composer.lock
 package-lock.json
 
 README.md
+
+vendor-bin/
