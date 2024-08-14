@@ -4,8 +4,9 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5fdd37cea860f4e9170e16dd879b57e1",
-    "packages": [
+    "content-hash": "7cf97a1aa13041adfdb2a10959e3124c",
+    "packages": [],
+    "packages-dev": [
         {
             "name": "bamarni/composer-bin-plugin",
             "version": "1.8.2",
@@ -62,9 +63,7 @@
                 "source": "https://github.com/bamarni/composer-bin-plugin/tree/1.8.2"
             },
             "time": "2022-10-31T08:38:03+00:00"
-        }
-    ],
-    "packages-dev": [
+        },
         {
             "name": "nextcloud/ocp",
             "version": "dev-stable29",
