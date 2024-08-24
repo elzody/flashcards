@@ -12,6 +12,7 @@
 	},
 	"dependencies": {
 		"@nextcloud/vue": "9.0.0-alpha.5",
+		"ts-fsrs": "^4.1.2",
 		"vue": "^3.4.31"
 	},
 	"devDependencies": {
