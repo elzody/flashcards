@@ -2,20 +2,6 @@
 	<NcAppNavigation></NcAppNavigation>
 </template>
 
-<script>
-import { NcAppNavigation } from '@nextcloud/vue'
-
-export default {
-	name: 'App',
-
-	components: {
-		NcAppNavigation,
-	},
-
-	data() {
-		return {
-			count: 0,
-		}
-	},
-}
+<script setup lang="ts">
+import NcAppNavigation from '@nextcloud/vue/dist/Components/NcAppNavigation.js'
 </script>
