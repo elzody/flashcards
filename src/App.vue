@@ -1,7 +1,7 @@
 <template>
-	<NcAppNavigation></NcAppNavigation>
+	<FlashcardsNavigation />
 </template>
 
 <script setup lang="ts">
-import NcAppNavigation from '@nextcloud/vue/dist/Components/NcAppNavigation.js'
+import FlashcardsNavigation from './components/FlashcardsNavigation.vue'
 </script>
