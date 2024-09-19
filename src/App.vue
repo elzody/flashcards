@@ -1,21 +1,15 @@
 <template>
-	<NcAppNavigation></NcAppNavigation>
+	<FlashcardsNav />
 </template>
 
 <script>
-import { NcAppNavigation } from '@nextcloud/vue'
+import FlashcardsNav from './components/FlashcardsNav.vue'
 
 export default {
 	name: 'App',
 
 	components: {
-		NcAppNavigation,
-	},
-
-	data() {
-		return {
-			count: 0,
-		}
+		FlashcardsNav,
 	},
 }
 </script>
