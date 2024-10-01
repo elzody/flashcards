@@ -22,7 +22,8 @@ class Version001000 extends SimpleMigrationStep
 		return $schema;
 	}
 
-	private function createDecksTable(mixed $schema): void {
+	private function createDecksTable(mixed $schema): void
+	{
 		$table = 'flashcards_decks';
 
 		if (!$schema->hasTable($table)) {
@@ -40,6 +41,10 @@ class Version001000 extends SimpleMigrationStep
 
 			$table->addColumn('emoji', Types::STRING, [
 				'notnull' => false,
+			]);
+
+			$table->addColumn('created_at', Types::DATETIME, [
+				'notnull' => true,
 			]);
 
 			$table->setPrimaryKey(['id']);
