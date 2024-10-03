@@ -4,6 +4,7 @@ namespace OCA\Flashcards\Controller;
 
 use OCA\Flashcards\AppInfo\Application;
 use OCA\Flashcards\Service\DeckService;
+use OCA\Flashcards\Exception\InternalError;
 use OCP\AppFramework\Http\Attribute\ApiRoute;
 use OCP\AppFramework\Http\DataResponse;
 use OCP\AppFramework\ApiController;
@@ -20,10 +21,13 @@ class DeckController extends ApiController
 	}
 
 	#[ApiRoute('POST', '/api/v1/decks')]
-	public function create(string $name): DataResponse
+	public function create(string $name, string $emoji): DataResponse
 	{
-		// TODO: error handling?
-		$this->deckService->create($name, null);
+		try {
+			$this->deckService->create($name, $emoji);
+		} catch (InternalError $e) {
+			return new DataResponse([], Http::STATUS_INTERNAL_SERVER_ERROR);
+		}
 
 		return new DataResponse([], Http::STATUS_OK);
 	}
