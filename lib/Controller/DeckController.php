@@ -35,14 +35,17 @@ class DeckController extends ApiController
 	#[ApiRoute('GET', '/api/v1/decks')]
 	public function show(?int $id = null)
 	{
+		if ($id !== null) {
+			$deck = $this->deckService->find($id);
+
+			return new DataResponse($deck->jsonSerialize(), Http::STATUS_OK);
+		}
+
 		$db_decks = $this->deckService->findAll();
 		$decks = [];
 
 		foreach ($db_decks as $deck) {
-			array_push($decks, [
-				'name' => $deck->getName(),
-				'emoji' => $deck->getEmoji(),
-			]);
+			array_push($decks, $deck->jsonSerialize());
 		}
 
 		return new DataResponse($decks, Http::STATUS_OK);

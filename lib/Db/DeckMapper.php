@@ -16,6 +16,31 @@ class DeckMapper extends QBMapper
 		parent::__construct($db, $this->table, Deck::class);
 	}
 
+	public function find(int $deckId, string $userId)
+	{
+		$query = $this->db->getQueryBuilder();
+
+		$whereUserId = $query
+			->expr()
+			->eq(
+				'owner',
+				$query->createNamedParameter($userId, IQueryBuilder::PARAM_STR)
+			);
+
+		$whereDeckId = $query
+			->expr()
+			->eq(
+				'id',
+				$query->createNamedParameter($deckId, IQueryBuilder::PARAM_INT)
+			);
+
+		$query
+			->select('*')
+			->from($this->table)
+			->where($whereUserId)
+			->andWhere($whereDeckId);
+	}
+
 	public function findAll(?string $userId = null)
 	{
 		$query = $this->db->getQueryBuilder();

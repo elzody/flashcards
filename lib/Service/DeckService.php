@@ -17,6 +17,13 @@ class DeckService
 	) {
 	}
 
+	public function find(int $deckId)
+	{
+		$user = $this->userSession->getUser();
+
+		return $this->mapper->find($deckId, $user->getUID());
+	}
+
 	public function findAll(?string $userId = null)
 	{
 		return $this->mapper->findAll($userId);
