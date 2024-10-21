@@ -1,0 +1,18 @@
+when:
+  - event: push
+    branch: main
+  - event: pull_request
+
+steps:
+  - name: eslint
+    image: node:lts
+    commands:
+      - npm ci
+      - npx eslint --fix-dry-run 'src/**/*.{js,vue}'
+
+  - name: phplint
+    image: composer:lts
+    commands:
+      - composer install
+      - composer bin phplint install
+      - composer run lint
