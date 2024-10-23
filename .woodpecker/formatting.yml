@@ -1,0 +1,11 @@
+when:
+  - event: push
+    branch: main
+  - event: pull_request
+
+steps:
+  - name: prettier
+    image: node:lts
+    commands:
+      - npm ci
+      - npx prettier --check .
