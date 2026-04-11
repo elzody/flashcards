@@ -16,9 +16,8 @@ class DeckService
 	public function __construct(
 		private DeckMapper $mapper,
 		private IUserSession $userSession,
-		private LoggerInterface $logger
-	) {
-	}
+		private LoggerInterface $logger,
+	) {}
 
 	public function find(int $deckId)
 	{

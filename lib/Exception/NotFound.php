@@ -2,6 +2,4 @@
 
 namespace OCA\Flashcards\Exception;
 
-class NotFound extends \Exception
-{
-}
+class NotFound extends \Exception {}
