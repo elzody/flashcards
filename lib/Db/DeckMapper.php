@@ -29,7 +29,7 @@ class DeckMapper extends QBMapper
 			->expr()
 			->eq(
 				'id',
-				$query->createNamedParameter($deckId, IQueryBuilder::PARAM_INT)
+				$query->createNamedParameter($deckId, IQueryBuilder::PARAM_INT),
 			);
 
 		$query

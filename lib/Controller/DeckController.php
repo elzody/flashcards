@@ -16,7 +16,7 @@ class DeckController extends ApiController
 {
 	public function __construct(
 		IRequest $request,
-		private DeckService $deckService
+		private DeckService $deckService,
 	) {
 		parent::__construct(Application::APP_NAME, $request);
 	}
@@ -32,7 +32,7 @@ class DeckController extends ApiController
 
 		return new DataResponse(
 			$createdDeck->jsonSerialize(),
-			Http::STATUS_CREATED
+			Http::STATUS_CREATED,
 		);
 	}
 

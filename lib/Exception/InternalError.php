@@ -2,6 +2,4 @@
 
 namespace OCA\Flashcards\Exception;
 
-class InternalError extends \Exception
-{
-}
+class InternalError extends \Exception {}
