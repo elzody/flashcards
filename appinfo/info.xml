@@ -10,12 +10,12 @@
 	</description>
 	<version>0.1.0</version>
 	<licence>agpl</licence>
-	<author mail="lizzy7128@tutanota.de">Elizabeth Danzberger</author>
+	<author mail="elizabeth@elzody.dev">Elizabeth Danzberger</author>
 	<namespace>Flashcards</namespace>
 	<category>tools</category>
 	<bugs>https://github.com/elzody/flashcards/issues</bugs>
 	<dependencies>
-		<nextcloud min-version="27" max-version="30" />
+		<nextcloud min-version="34" max-version="34" />
 	</dependencies>
 	<navigations>
 		<navigation>
