@@ -18,8 +18,8 @@
 		"lint": "vendor/bin/phplint lib/"
 	},
 	"require": {
-		"php": "^8.1",
-		"nextcloud/ocp": "^30.0"
+		"php": "^8.2",
+		"nextcloud/ocp": "dev-master"
 	},
 	"require-dev": {
 		"bamarni/composer-bin-plugin": "^1.8",
@@ -32,7 +32,7 @@
 		"optimize-autoloader": true,
 		"sort-packages": true,
 		"platform": {
-			"php": "8.1"
+			"php": "8.2"
 		}
 	}
 }
