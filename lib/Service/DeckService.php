@@ -7,7 +7,6 @@ use OCA\Flashcards\Db\DeckMapper;
 use OCA\Flashcards\Exception\InternalError;
 use OCA\Flashcards\Exception\NotFound;
 use OCP\AppFramework\Db\DoesNotExistException;
-use OCP\AppFramework\Db\MultipleObjectsReturnedException;
 use OCP\IUserSession;
 use Psr\Log\LoggerInterface;
 
