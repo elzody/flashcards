@@ -3,6 +3,10 @@
 	"private": true,
 	"version": "0.1.0",
 	"type": "module",
+	"engines": {
+		"node": "^24.0.0",
+		"npm": "^11.3.0"
+	},
 	"scripts": {
 		"dev": "vite -m development build",
 		"build": "vite -m production build",
@@ -10,6 +14,9 @@
 		"fmt": "prettier --write .",
 		"lint": "npx eslint --fix 'src/**/*.{js,vue}'"
 	},
+	"browserslist": [
+		"extends @nextcloud/browserslist-config"
+	],
 	"dependencies": {
 		"@nextcloud/l10n": "^3.4.1",
 		"@nextcloud/vue": "^9.6.0",
