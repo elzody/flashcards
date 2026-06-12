@@ -59,7 +59,7 @@ jobs:
     needs: changes
     if: needs.changes.outputs.eslint != 'false'
 
-    name: NPM lint
+    name: NPM
 
     steps:
       - name: Checkout
@@ -104,7 +104,7 @@ jobs:
             '${{ needs.changes.outputs.php-max }}',
           ]
 
-    name: php-lint (${{ matrix.php-versions }})
+    name: PHP ${{ matrix.php-versions }}
 
     steps:
       - name: Checkout
@@ -134,7 +134,7 @@ jobs:
     needs: changes
     if: needs.changes.outputs.info-xml != 'false'
 
-    name: info.xml lint
+    name: XML
 
     steps:
       - name: Checkout
