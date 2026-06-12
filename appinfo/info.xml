@@ -15,7 +15,7 @@
 	<category>tools</category>
 	<bugs>https://github.com/elzody/flashcards/issues</bugs>
 	<dependencies>
-		<nextcloud min-version="34" max-version="34" />
+		<nextcloud min-version="33" max-version="35" />
 	</dependencies>
 	<navigations>
 		<navigation>
