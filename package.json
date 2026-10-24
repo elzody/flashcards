@@ -19,20 +19,20 @@
 	],
 	"dependencies": {
 		"@nextcloud/l10n": "^3.4.1",
-		"@nextcloud/vue": "^9.6.0",
-		"ts-fsrs": "^5.3.2",
-		"vue": "^3.5.32"
+		"@nextcloud/vue": "^9.14.0",
+		"ts-fsrs": "^5.4.2",
+		"vue": "^3.5.44"
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
 		"@nextcloud/browserslist-config": "^3.1.2",
-		"@nextcloud/vite-config": "^2.5.2",
-		"@prettier/plugin-php": "^0.25.0",
-		"@vitejs/plugin-vue": "^6.0.5",
-		"eslint": "^10.2.0",
+		"@nextcloud/vite-config": "^2.5.4",
+		"@prettier/plugin-php": "^0.26.0",
+		"@vitejs/plugin-vue": "^6.0.10",
+		"eslint": "^10.13.0",
 		"eslint-config-prettier": "^10.1.8",
-		"eslint-plugin-vue": "^10.8.0",
-		"prettier": "^3.8.2",
-		"vite": "^7.3.1"
+		"eslint-plugin-vue": "^10.11.1",
+		"prettier": "^3.9.10",
+		"vite": "^7.3.7"
 	}
 }
