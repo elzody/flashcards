@@ -21,11 +21,10 @@
 	},
 	"scripts": {
 		"fmt": "npx prettier --write .",
-		"lint": "vendor/bin/phplint lib/"
+		"lint": "vendor/bin/phplint lint lib/"
 	},
 	"require": {
-		"php": "^8.2",
-		"nextcloud/ocp": "dev-master"
+		"php": "^8.2"
 	},
 	"require-dev": {
 		"bamarni/composer-bin-plugin": "^1.9",
