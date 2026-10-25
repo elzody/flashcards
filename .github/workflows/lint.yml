@@ -44,6 +44,9 @@ jobs:
               - '**.vue'
             php:
               - 'lib/**'
+              - 'tests/**'
+              - 'phpunit.xml'
+              - 'vendor-bin/**'
               - 'composer.json'
               - 'composer.lock'
             info-xml:

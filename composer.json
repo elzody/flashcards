@@ -21,7 +21,8 @@
 	},
 	"scripts": {
 		"fmt": "npx prettier --write .",
-		"lint": "vendor/bin/phplint lint lib/"
+		"lint": "vendor/bin/phplint lint lib/ tests/",
+		"test": "vendor/bin/phpunit -c phpunit.xml --fail-on-warning --fail-on-risky --display-warnings --display-deprecations --display-phpunit-deprecations"
 	},
 	"require": {
 		"php": "^8.2"
