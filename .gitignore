@@ -6,4 +6,5 @@ vendor/
 vendor-bin/**/vendor/
 
 .phplint.cache/
+.phpunit.cache/
 .idea/
